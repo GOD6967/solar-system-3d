@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmos 3D — Real-Time Interactive Solar System Explorer</title>
+    <meta name="description" content="Explore the Sun, planets, moons, asteroids, and comets in real-time 3D with live Wikipedia API data." />
+    <meta name="theme-color" content="#02040a" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff9900'><circle cx='12' cy='12' r='8'/></svg>" />
+    <script type="module" crossorigin src="/solar-system-3d/assets/index-BeMYyRwM.js"></script>
+    <link rel="stylesheet" crossorigin href="/solar-system-3d/assets/index-DNCuCht7.css">
+  </head>
+  <body class="bg-black text-slate-100 overflow-hidden">
+    <!-- WebGL Canvas Container -->
+    <div id="canvas-container"></div>
+
+    <!-- HUD Overlay Container -->
+    <div id="hud-container"></div>
+
+    <!-- Time Simulation Controls Container -->
+    <div id="time-controls-container"></div>
+
+    <!-- Wikipedia Inspector Sidebar -->
+    <aside id="inspector-container"></aside>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+      <div class="loading-orb"></div>
+      <h1 class="loading-title">COSMOS 3D</h1>
+      <p class="loading-sub">Charting the solar system</p>
+      <div class="loading-bar"><div id="loading-bar-fill" class="loading-bar-fill"></div></div>
+      <p id="loading-percent" class="loading-percent">0%</p>
+    </div>
+
+    <!-- Main Entry Module -->
+  </body>
+</html>
